@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('explore.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--text-light);
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for background opacity */
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--secondary-color);
+  margin-top: 15px;
+}
+
+p {
+  color: var(--primary-color);
+}
+
+/* Additional styling for other sections and classes can be added as needed */

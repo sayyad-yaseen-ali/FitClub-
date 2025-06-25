@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+  background-image: url('home1.jpg'); /* Replace 'your-background-image.jpg' with the path to your image file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+#bookclass {
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--white);
+}
+
+#bookclass .main {
+  margin-bottom: 2rem;
+}
+
+#bookclass h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+#bookclass h2 span {
+  color: var(--secondary-color);
+}
+
+#bookclass h6 {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+#bookclass .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#bookclass .frame {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--primary-color-light);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#bookclass .frame:hover {
+  background-color: var(--primary-color-extra-light);
+}
+
+#bookclass .box img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#bookclass .headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#bookclass .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#bookclass .icons i {
+  font-size: 1.25rem;
+  color: var(--white);
+  margin-right: 0.5rem;
+}
+
+#bookclass p {
+  margin-top: 1rem;
+  color: var(--text-light);
+}
+
+#bookclass a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#bookclass a:hover {
+  background-color: var(--secondary-color-dark);
+}
+

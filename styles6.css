@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.input-area {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: var(--primary-color-extra-light);
+  border: none;
+  color: var(--text-light);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: var(--text-light);
+}
+
+.error-icon {
+  display: none;
+}
+
+.error-txt {
+  display: none;
+  color: var(--secondary-color-dark);
+}
+
+input:focus {
+  outline: none;
+}
+
+input:invalid {
+  border: 2px solid var(--secondary-color-dark);
+}
+
+input:invalid + .error-icon {
+  display: block;
+}
+
+input:invalid + .error-icon + .error-txt {
+  display: block;
+}
+
+.pass-txt {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.pass-txt a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.sign-txt {
+  text-align: center;
+}
+
+.sign-txt a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}

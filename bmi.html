@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles6.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="calculator">
+            <form>
+                <label for="chk" aria-hidden="true">BMI Calculator</label>
+                <input type="number" name="weight" placeholder="Weight (kg)" required="">
+                <input type="number" name="height" placeholder="Height (cm)" required="">
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <div id="result"></div>
+            </form>
+        </div>
+	<script>
+    function calculateBMI() {
+      // Get user input
+      var weight = parseFloat(document.getElementById("weight").value);
+      var height = parseFloat(document.getElementById("height").value);
+
+      // Check if the inputs are valid numbers
+      if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+        alert("Please enter valid weight and height values.");
+        return;
+      }
+
+      // Calculate BMI
+      var bmi = weight / (height * height);
+
+      // Display the result
+      document.getElementById("result").innerText = bmi.toFixed(2);
+    }
+  </script>
+	<!-- Include the external JavaScript file -->
+    
+    </div>
+</body>
+</html>
+
